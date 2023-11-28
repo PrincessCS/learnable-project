@@ -4,6 +4,8 @@
     margin: 0px 0px;
 }
 body{
+    background-image: url(Images/Backdrop.png);
+    background-attachment: fixed;
     overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -87,13 +89,14 @@ button:hover{
 
 
     body{
+
         overflow-y:auto;
         overflow-x: hidden;
     }
 
     .backdrop image{
         
-        object-fit:fill;
+        object-fit:cover;
         overflow: hidden;
         
     }
