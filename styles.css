@@ -6,20 +6,12 @@
 
 body {
   background-image: url(Images/Backdrop.png);
-  background-size: contain;
+  position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.backdrop image {
-  position: relative;
-  -o-object-fit: contain;
-     object-fit: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
 }
 
 #flex-container {
@@ -31,6 +23,8 @@ body {
   left: 0;
   right: 0;
   transform: translate(0, -50%);
+  margin-top: 20rem;
+  overflow-y: auto;
 }
 #flex-container #text-container {
   width: 400px;
@@ -80,22 +74,14 @@ body {
 
 /*for mobile and tablet*/
 @media only screen and (max-width: 768px) {
-  body {
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .backdrop image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    overflow: hidden;
-  }
   #flex-container {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    margin-top: 30rem;
     position: absolute;
-    top: 80%;
+    top: 10%;
   }
   #flex-container #image-container {
     margin-top: 50px;
